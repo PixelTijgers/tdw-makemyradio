@@ -463,70 +463,6 @@ class StandAloneSeeder extends Seeder
                 'og_locale' => 'nl_NL',
             ],
             [
-                'page_title' => 'Privacybeleid',
-                'menu_title' => 'Privacybeleid',
-                'slug' => '/privacybeleid',
-                'content' => '
-                <p>Pixeltijgers geeft veel om uw privacy. Wij verwerken daarom uitsluitend gegevens die wij nodig hebben voor (het verbeteren van) onze dienstverlening en gaan zorgvuldig om met de informatie die wij over u en uw gebruik van onze diensten hebben verzameld. Wij stellen uw gegevens nooit voor commerciële doelstellingen ter beschikking aan derden.</p>
-                <p>Dit privacybeleid is van toepassing op het gebruik van de website en de daarop ontsloten dienstverlening van Pixeltijgers. De ingangsdatum voor de geldigheid van deze voorwaarden is <strong>01/06/2022</strong>, met het publiceren van een nieuwe versie vervalt de geldigheid van alle voorgaande versies. Dit privacybeleid beschrijft welke gegevens over u door ons worden verzameld, waar deze gegevens voor worden gebruikt en met wie en onder welke voorwaarden deze gegevens eventueel met derden kunnen worden gedeeld. Ook leggen wij aan u uit op welke wijze wij uw gegevens opslaan en hoe wij uw gegevens tegen misbruik beschermen en welke rechten u heeft met betrekking tot de door u aan ons verstrekte persoonsgegevens.</p>
-                <p>Als u vragen heeft over ons privacybeleid kunt u contact opnemen met onze contactpersoon voor privacyzaken, u vindt de contactgegevens aan het einde van ons privacybeleid.</p>
-                <h2>Over de gegevensverwerking</h2>
-                <p>Hieronder kunt u lezen op welke wijze wij uw gegevens verwerken, waar wij deze (laten) opslaan, welke beveiligingstechnieken wij gebruiken en voor wie de gegevens inzichtelijk zijn.</p>
-                <h3>Doel van de gegevensverwerking</h3>
-                <h4>Algemeen doel van de verwerking</h4>
-                <p>Wij gebruiken uw gegevens uitsluitend ten behoeve van onze dienstverlening. Dat wil zeggen dat het doel van de verwerking altijd direct verband houdt met de opdracht die u verstrekt. Wij gebruiken uw gegevens niet voor (gerichte) marketing. Als u gegevens met ons deelt en wij gebruiken deze gegevens om &#8211; anders dan op uw verzoek &#8211; op een later moment contact met u op te nemen, vragen wij u hiervoor expliciet toestemming. Uw gegevens worden niet met derden gedeeld, anders dan om aan boekhoudkundige en overige administratieve verplichtingen te voldoen. Deze derden zijn allemaal tot geheimhouding gehouden op grond van de overeenkomst tussen hen en ons of een eed of wettelijke verplichting.</p>
-                <h4>Automatisch verzamelde gegevens</h4>
-                <p>Gegevens die automatisch worden verzameld door onze website worden verwerkt met het doel onze dienstverlening verder te verbeteren. Deze gegevens (bijvoorbeeld uw IP-adres, webbrowser en besturingssysteem) zijn geen persoonsgegevens.</p>
-                <h4>Medewerking aan fiscaal en strafrechtelijk onderzoek</h4>
-                <p>In voorkomende gevallen kan Pixeltijgers op grond van een wettelijke verplichting worden gehouden tot het delen van uw gegevens in verband met fiscaal of strafrechtelijk onderzoek van overheidswege. In een dergelijk geval zijn wij gedwongen uw gegevens te delen, maar wij zullen ons binnen de mogelijkheden die de wet ons biedt daartegen verzetten.</p>
-                <h4>Bewaartermijnen</h4>
-                <p>Wij bewaren uw gegevens zolang u cliënt van ons bent. Dit betekent dat wij uw klantprofiel bewaren totdat u aangeeft dat u niet langer van onze diensten gebruik wenst te maken. Als u dit bij ons aangeeft zullen wij dit tevens opvatten als een vergeetverzoek. Op grond van toepasselijke administratieve verplichtingen dienen wij facturen met uw (persoons)gegevens te bewaren, deze gegevens zullen wij dus voor zolang de toepasselijke termijn loopt bewaren. Medewerkers hebben echter geen toegang meer tot uw cliëntprofiel en documenten die wij naar aanleiding van uw opdracht hebben vervaardigd.</p>
-                <h3>Uw rechten</h3>
-                <p>Op grond van de geldende Nederlandse en Europese wetgeving heeft u als betrokkene bepaalde rechten met betrekking tot de persoonsgegevens die door of namens ons worden verwerkt. Wij leggen u hieronder uit welke rechten dit zijn en hoe u zich op deze rechten kunt beroepen.</p>
-                <p>In beginsel sturen wij om misbruik te voorkomen afschriften en kopieën van uw gegevens enkel naar uw bij ons reeds bekende e-mailadres. In het geval dat u de gegevens op een ander e-mailadres of bijvoorbeeld per post wenst te ontvangen, zullen wij u vragen zich te legitimeren. Wij houden een administratie bij van afgehandelde verzoeken, in het geval van een vergeetverzoek administreren wij geanonimiseerde gegevens. Alle afschriften en kopieën van gegevens ontvangt u in de machineleesbare gegevensindeling die wij binnen onze systemen hanteren.</p>
-                <p>U heeft te allen tijde het recht om een klacht in te dienen bij de Autoriteit Persoonsgegevens als u vermoedt dat wij uw persoonsgegevens op een verkeerde manier gebruiken.</p>
-                <h4>Inzagerecht</h4>
-                <p>U heeft altijd het recht om de gegevens die wij (laten) verwerken en die betrekking hebben op uw persoon of daartoe herleidbaar zijn, in te zien. U kunt een verzoek met die strekking doen aan onze contactpersoon voor privacyzaken. U ontvangt dan binnen 30 dagen een reactie op uw verzoek. Als uw verzoek wordt ingewilligd sturen wij u op het bij ons bekende e-mailadres een kopie van alle gegevens met een overzicht van de verwerkers die deze gegevens onder zich hebben, onder vermelding van de categorie waaronder wij deze gegevens hebben opgeslagen.</p>
-                <h4>Rectificatierecht</h4>
-                <p>U heeft altijd het recht om de gegevens die wij (laten) verwerken en die betrekking hebben op uw persoon of daartoe herleidbaar zijn, te laten aanpassen. U kunt een verzoek met die strekking doen aan onze contactpersoon voor privacyzaken. U ontvangt dan binnen 30 dagen een reactie op uw verzoek. Als uw verzoek wordt ingewilligd sturen wij u op het bij ons bekende e-mailadres een bevestiging dat de gegevens zijn aangepast.</p>
-                <h4>Recht op beperking van de verwerking</h4>
-                <p>U heeft altijd het recht om de gegevens die wij (laten) verwerken die betrekking hebben op uw persoon of daartoe herleidbaar zijn, te beperken. U kunt een verzoek met die strekking doen aan onze contactpersoon voor privacyzaken. U ontvangt dan binnen 30 dagen een reactie op uw verzoek. Als uw verzoek wordt ingewilligd sturen wij u op het bij ons bekende e-mailadres een bevestiging dat de gegevens tot u de beperking opheft niet langer worden verwerkt.</p>
-                <h4>Recht op overdraagbaarheid</h4>
-                <p>U heeft altijd het recht om de gegevens die wij (laten) verwerken en die betrekking hebben op uw persoon of daartoe herleidbaar zijn, door een andere partij te laten uitvoeren. U kunt een verzoek met die strekking doen aan onze contactpersoon voor privacyzaken. U ontvangt dan binnen 30 dagen een reactie op uw verzoek. Als uw verzoek wordt ingewilligd sturen wij u op het bij ons bekende e-mailadres afschriften of kopieën van alle gegevens over u die wij hebben verwerkt of in opdracht van ons door andere verwerkers of derden zijn verwerkt. Naar alle waarschijnlijkheid kunnen wij in een dergelijk geval de dienstverlening niet langer voortzetten, omdat de veilige koppeling van databestanden dan niet langer kan worden gegarandeerd.</p>
-                <h4>Recht van bezwaar en overige rechten</h4>
-                <p>U heeft in voorkomende gevallen het recht bezwaar te maken tegen de verwerking van uw persoonsgegevens door of in opdracht van Pixeltijgers. Als u bezwaar maakt zullen wij onmiddellijk de gegevensverwerking staken in afwachting van de afhandeling van uw bezwaar. Is uw bezwaar gegrond dat zullen wij afschriften en/of kopieën van gegevens die wij (laten) verwerken aan u ter beschikking stellen en daarna de verwerking blijvend staken.</p>
-                <p>U heeft bovendien het recht om niet aan geautomatiseerde individuele besluitvorming of profiling te worden onderworpen. Wij verwerken uw gegevens niet op zodanige wijze dat dit recht van toepassing is. Bent u van mening dat dit wel zo is, neem dan contact op met onze contactpersoon voor privacyzaken.</p>
-                <h3>Cookies</h3>
-                <p>Deze cookies zijn verplicht en kunnen niet uitgezet worden. Ze worden alleen geplaatst door gebruikersacties. Het gaat hier bijvoorbeeld om privacy settings, inloggen of het invullen van formulieren. Je kan met je browser deze settings blokkeren. Dit kan het gevolg hebben dat sommige onderdelen van Gamekings.tv niet meer functioneren.</p>
-                <h4>Google Analytics</h4>
-                <p>Cookies: <em>__gads</em>, <em>_ga</em>, <em>_gat</em>, <em>_gid</em>.</p>
-                <p>Via onze website worden cookies geplaatst van het Amerikaanse bedrijf Google, als deel van de “Analytics”-dienst. Wij gebruiken deze dienst om bij te houden en rapportages te krijgen over hoe bezoekers de website gebruiken. Deze verwerker is mogelijk verplicht op grond van geldende wet- en regelgeving inzage te geven in deze gegevens. Wij verzamelen informatie over uw surfgedrag en delen deze gegevens met Google. Google kan deze informatie in samenhang met andere datasets interpreteren en op die manier uw bewegingen op het internet volgen. Google gebruikt deze informatie voor het aanbieden van onder andere gerichte advertenties (Adwords) en overige Google- diensten en producten.</p>
-                <h4>VIMEO</h4>
-                <p>Cookies: <em>player, vuid, __qca, __ssid, _abexps, _ceg.s, _ceg.u, search_click_position, vimeo,<br />
-                vimeo_gdpr_optin, continuous_play_v3, has_logged_in, is_logged_in.<br />
-                </em></p>
-                <p>Via onze website worden cookies geplaatst van het bedrijf Vimeo, als deel van de “Video”-dienst. Wij gebruiken deze dienst om videos te tonen. De Vimeo kan cookies plaatsten om instellingen i.v.m. de Vimeo Video Player op te kunnen slaan. Deze cookies kunnen niet uitgezet worden.</p>
-                <h4>Cookies van derde partijen</h4>
-                <p>In het geval dat softwareoplossingen van derde partijen gebruik maken van cookies is dit vermeld in deze privacyverklaring.</p>
-                <h3>Wijzigingen in het privacybeleid</h3>
-                <p>Wij behouden te allen tijde het recht ons privacybeleid te wijzigen. Op deze pagina vindt u echter altijd de meest recente versie. Als het nieuwe privacybeleid gevolgen heeft voor de wijze waarop wij reeds verzamelde gegevens met betrekking tot u verwerken, dan brengen wij u daarvan per e-mail op de hoogte.</p>
-                <h3>Contactgegevens</h3>
-                <ul>
-                    <li><span>E-mail:</span> <a href="mailto:info@pixeltijgers.nl">info@pixeltijgers.nl</a></li>
-                    <li><span>Website:</span> <a href="www.pixeltijgers.nl">www.pixeltijgers.nl</a></li>
-                </ul>',
-
-                'meta_title' => 'Privacybeleid',
-                'meta_description' => 'Dit is een stuk tekst.',
-                'meta_tags' => 'Website, Webdesign, Design',
-
-                'og_title' => 'Privacybeleid',
-                'og_description' => 'Dit is een stuk tekst.',
-                'og_slug' => '/privacybeleid',
-                'og_type' => 'website',
-                'og_locale' => 'nl_NL',
-            ],
-            [
                 'page_title' => 'Cookie Policy',
                 'menu_title' => 'Cookie Policy',
                 'slug' => '/cookie-policy',
@@ -589,22 +525,6 @@ class StandAloneSeeder extends Seeder
                 'og_title' => 'Cookie Policy',
                 'og_description' => 'Dit is een stuk tekst.',
                 'og_slug' => '/cookie-policy',
-                'og_type' => 'website',
-                'og_locale' => 'nl_NL',
-            ],
-            [
-                'page_title' => 'Sitemap',
-                'menu_title' => 'Sitemap',
-                'slug' => '/sitemap',
-                'content' => '<p>Dit is een stuk tekst.</p>',
-
-                'meta_title' => 'Sitemap',
-                'meta_description' => 'Dit is een stuk tekst.',
-                'meta_tags' => 'Website, Webdesign, Design',
-
-                'og_title' => 'Sitemap',
-                'og_description' => 'Dit is een stuk tekst.',
-                'og_slug' => '/sitemap',
                 'og_type' => 'website',
                 'og_locale' => 'nl_NL',
             ],

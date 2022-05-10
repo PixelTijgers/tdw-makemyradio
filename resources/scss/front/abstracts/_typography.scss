@@ -1,4 +1,14 @@
+@font-face {
+    font-family: 'Salvatore Roman';
+    src: local('Salvatore Roman Regular'), local('Salvatore-Roman-Regular'),
+        url('fonts/SalvatoreRoman-Regular.woff2') format('woff2'),
+        url('fonts/SalvatoreRoman-Regular.woff') format('woff'),
+        url('fonts/SalvatoreRoman-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
 :root {
-    --ff-base: 'Red Hat Display', sans-serif;
-    --ff-head: 'Nunito', sans-serif;
+    --ff-base: 'Lato', sans-serif;
+    --ff-head: 'Salvatore Roman', sans-serif;
 }

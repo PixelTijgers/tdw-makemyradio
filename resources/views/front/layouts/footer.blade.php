@@ -10,7 +10,7 @@
 
                     <figure>
 
-                        <img src="{{ URL::asset('img/common/' . config('cms.common.settings.logo')) }}" alt="{{ config('app.name') }} Logo" />
+                        <img src="{{ URL::asset('img/common/Logo-MMR-Wit.png') }}" alt="{{ config('app.name') }} Logo" />
 
                     </figure>
 
@@ -38,7 +38,7 @@
 
             <div class="flex justify-start xl:justify-end w-full xl:w-4/12 mt-7 xl:mt-0">
 
-                <p>© {{ config('app.name') }} 2021 - {{ date('Y') }}, alle rechten voorbehouden.</p>
+                <p>© {{ config('app.name') }} {{ date('Y') }}, alle rechten voorbehouden.</p>
 
             </div>
 

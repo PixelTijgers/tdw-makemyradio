@@ -13,15 +13,16 @@
 }
 
 .front-layouts-Footer {
-    background: var(--clr-white-100);
+    background: var(--clr-primary-300);
 
     .footer-top {
-        padding: 30px 0;
+        align-items: center;
+        padding: 60px 0 30px;
 
         a.brand-logo {
             figure {
                 img {
-                    height: 40px !important;
+                    height: 100px !important;
                 }
             }
         }
@@ -36,7 +37,6 @@
                     @include hoverTransition(var(--tr-time), var(--ts-ease));
 
                     align-items: center;
-                    background: var(--clr-white-300);
                     border-radius: 50%;
                     color: var(--clr-white-100);
                     display: flex;
@@ -44,15 +44,11 @@
                     justify-content: center;
                     width: var(--hw-social);
 
-                    &:hover {
-                        background: var(--clr-primary-300);
-                    }
-
                     svg {
                         @include hoverTransition(var(--tr-time), var(--ts-ease));
 
                         color: var(--clr-white-100);
-                        font-size: 18px;
+                        font-size: 32px;
                     }
                 }
             }
@@ -60,7 +56,7 @@
     }
 
     .copyright {
-        border-top: 1px solid var(--clr-grey-300);
+        border-top: 1px solid var(--clr-white-100);
         padding: 40px 0;
 
         nav {
@@ -74,6 +70,8 @@
 
                 li {
                     display: flex;
+                    font-family: var(--ff-head);
+                    font-size: 14px;
                     line-height: 30px;
 
                     @include screen-size(lg) {
@@ -89,22 +87,19 @@
                     a {
                         @include hoverTransition(var(--tr-time), var(--ts-ease));
 
-                        color: var(--clr-white-300);
+                        color: var(--clr-white-100);
                         font-size: var(--fs-base);
-
-                        &:hover {
-                            color: var(--clr-primary-300);
-                        }
                     }
                 }
             }
         }
 
         p {
-            color: var(--clr-white-300);
+            color: var(--clr-white-100);
             letter-spacing: .005rem;
             line-height: 30px;
-            font-size: 16px;
+            font-family: var(--ff-head);
+            font-size: 14px;
             text-align: left;
 
             @include screen-size(lg) {

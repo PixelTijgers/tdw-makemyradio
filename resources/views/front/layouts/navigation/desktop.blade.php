@@ -2,7 +2,7 @@
 
     <div class="flex justify-between max-w-screen-xl mx-auto h-full">
 
-        <a href="{{ url('/') }}" class="brand-logo flex items-center w-3/12">
+        <a href="{{ url('/') }}" class="brand-logo flex items-center w-2/12">
 
             <figure>
 
@@ -12,7 +12,7 @@
 
         </a>
 
-        <nav class="flex justify-center w-6/12">
+        <nav class="flex justify-end w-9/12">
 
             @include('front.layouts.navigation.menu.navigation-menu', [
                 'navigationMenu' => 'main',
@@ -20,7 +20,7 @@
 
         </nav>
 
-        <div class="flex w-3/12">
+        <div class="flex w-1/12">
 
             <x-social-media/>
 

@@ -50,7 +50,7 @@ return [
     'mburger' => 'mburger--spin',
 
     // Filename of the logo
-    'logo' => 'pixeltijgers_logo.svg',
+    'logo' => 'Logo-MMR.png',
 
     // Default contact form mail.
     'email' => 'info@pixeltijgers.nl',

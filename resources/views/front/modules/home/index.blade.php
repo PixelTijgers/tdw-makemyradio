@@ -28,10 +28,70 @@
 
             <div class="mx-auto max-w-screen-xl w-full px-5 md:px-16 xl:px-0">
 
-                <h2>{{ $page->page_title}} </h2>
+                <h2>{{ config('app.name') }} </h2>
                 {!! $page->content !!}
 
             </div>
+
+        </div>
+
+        <div class="main-container">
+
+            <div class="mx-auto max-w-screen-xl w-full px-5 md:px-16 xl:px-0">
+
+                <form method="post" action="{{ route('contact.index')}}" class="w-7/12">
+
+                    <div class="form-group">
+
+                        <label for="name">Naam:</label>
+                        <input id="name" type="text" name="name" placeholder="Naam" autofocus/>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="company">Bedrijf:</label>
+                        <input id="company" type="text" name="company" placeholder="Bedrijf"/>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="email">E-mail adres:</label>
+                        <input id="email" type="email" name="email" placeholder="E-mail adres"/>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="email">E-mail adres:</label>
+                        <input id="email" type="email" name="email" placeholder="E-mail adres"/>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="phone">Telefoonnummer:</label>
+                        <input id="phone" type="text" name="phone" placeholder="Telefoonnummer"/>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="message">Bericht:</label>
+                        <textarea placeholder="Bericht" name="message" id="message"></textarea>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <div class="sub-container">
+
+
 
         </div>
 
