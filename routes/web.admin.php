@@ -10,6 +10,7 @@ use App\Http\Controllers\Admin\Modules\DashboardController;
 use App\Http\Controllers\Admin\Modules\PageController;
 use App\Http\Controllers\Admin\Modules\PostController;
 use App\Http\Controllers\Admin\Modules\SocialController;
+use App\Http\Controllers\Admin\Modules\SponsorController;
 
 /*
 |--------------------------------------------------------------------------
@@ -48,6 +49,9 @@ Route::middleware(['auth:sanctum', 'verified', 'admin.permission'])->prefix('adm
 
         // Init categories.
         Route::resource('categories', CategoryController::class, ['names' => 'category']);
+
+        // Init categories.
+        Route::resource('partners', SponsorController::class, ['names' => 'sponsor']);
 
         // Init social media route(s).
         Route::resource('socials', SocialController::class, ['names' => 'social']);

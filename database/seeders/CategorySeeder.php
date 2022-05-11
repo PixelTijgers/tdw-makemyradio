@@ -20,13 +20,13 @@ class CategorySeeder extends Seeder
     {
         $categories = [
             [
-                'name' => 'Expertises',
+                'name' => 'Podcast',
             ],
             [
-                'name' => 'Blog',
+                'name' => 'Livestream',
             ],
             [
-                'name' => 'Case',
+                'name' => 'Radio',
             ],
         ];
 

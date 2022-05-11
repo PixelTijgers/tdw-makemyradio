@@ -34,14 +34,6 @@
 
                         <x-form.input
                             type="text"
-                            name="pageSlider[{{ $key }}][subtitle]"
-                            :label="__('Subtitle')"
-                            :required="false"
-                            :value="$slide->subtitle"
-                        />
-
-                        <x-form.input
-                            type="text"
                             name="pageSlider[{{ $key }}][title]"
                             :label="__('Title')"
                             :required="false"
@@ -54,16 +46,6 @@
                             :label="__('Figcaption')"
                             :required="false"
                             :value="$slide->figcaption"
-                        />
-
-                        <x-form.slug
-                            name="pageSlider[{{ $key }}][slug]"
-                            slugField="page_title"
-                            :label="__('Url')"
-                            :model="@$page"
-                            :modelName="\App\Models\Post::where('id', @$page->parent_id)->first()"
-                            :required="false"
-                            :value="$slide->slug"
                         />
 
                     </div>

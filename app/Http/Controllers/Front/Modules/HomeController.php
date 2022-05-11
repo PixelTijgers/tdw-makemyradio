@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 // Facades.
 
 // Models.
+use App\Models\Page;
 
 // Traits
 
@@ -24,7 +25,9 @@ class HomeController extends Controller
     */
     public function index()
     {
-        return view('front.modules.home.index');
+        $livestream = Page::where('id', 3)->firstOrFail();
+
+        return view('front.modules.home.index', compact('livestream'));
     }
 
     /**

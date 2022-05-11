@@ -69,6 +69,10 @@
                                     <a class="nav-link" id="slider-line-tab" data-bs-toggle="tab" data-bs-target="#slider" role="tab" aria-controls="slider" aria-selected="true">{{ __('Slider') }}</a>
                                 </li>
 
+                                <li class="nav-item">
+                                    <a class="nav-link" id="slider-line-tab" data-bs-toggle="tab" data-bs-target="#images" role="tab" aria-controls="images" aria-selected="true">{{ __('Images') }}</a>
+                                </li>
+
                             </ul>
 
                             <div class="tab-content mt-3" id="lineTabContent">
@@ -95,6 +99,14 @@
 
                                     @include('admin.modules.page.includes.slider', [
                                         'pageSlides' => $pageSlides
+                                    ])
+
+                                </div>
+
+                                <div class="tab-pane fade" id="images" role="tabpanel" aria-labelledby="slider-line-tab">
+
+                                    @include('admin.modules.page.includes.image', [
+                                        'images' => $images
                                     ])
 
                                 </div>

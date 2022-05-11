@@ -40,25 +40,9 @@ class MainSeeder extends Seeder
                 'og_locale' => 'nl_NL',
             ],
             [
-                'page_title' => 'Expertises',
-                'menu_title' => 'Expertises',
-                'slug' => '/expertises',
-                'content' => '<p>Dit is een stuk tekst.</p>',
-
-                'meta_title' => 'Expertises',
-                'meta_description' => 'Dit is een stuk tekst.',
-                'meta_tags' => 'Website, Webdesign, Design',
-
-                'og_title' => 'Expertises',
-                'og_description' => 'Dit is een stuk tekst.',
-                'og_slug' => '/expertises',
-                'og_type' => 'website',
-                'og_locale' => 'nl_NL',
-            ],
-            [
                 'page_title' => 'Over Ons',
                 'menu_title' => 'Over Ons',
-                'slug' => '#over-ons',
+                'slug' => '/over-ons',
                 'content' => '<p>Dit is een stuk tekst.</p>',
 
                 'meta_title' => 'Over Ons',
@@ -67,14 +51,14 @@ class MainSeeder extends Seeder
 
                 'og_title' => 'Over Ons',
                 'og_description' => 'Dit is een stuk tekst.',
-                'og_slug' => '#over-ons',
+                'og_slug' => '/over-ons',
                 'og_type' => 'website',
                 'og_locale' => 'nl_NL',
             ],
             [
                 'page_title' => 'Livestream',
                 'menu_title' => 'Livestream',
-                'slug' => '#livestream',
+                'slug' => '/livestream',
                 'content' => '<p>Dit is een stuk tekst.</p>',
 
                 'meta_title' => 'Livestream',
@@ -83,14 +67,14 @@ class MainSeeder extends Seeder
 
                 'og_title' => 'Livestream',
                 'og_description' => 'Dit is een stuk tekst.',
-                'og_slug' => '#livestream',
+                'og_slug' => '/livestream',
                 'og_type' => 'website',
                 'og_locale' => 'nl_NL',
             ],
             [
                 'page_title' => 'Podcast',
                 'menu_title' => 'Podcast',
-                'slug' => '#podcast',
+                'slug' => '/podcast',
                 'content' => '<p>Dit is een stuk tekst.</p>',
 
                 'meta_title' => 'Podcast',
@@ -99,14 +83,14 @@ class MainSeeder extends Seeder
 
                 'og_title' => 'Podcast',
                 'og_description' => 'Dit is een stuk tekst.',
-                'og_slug' => '#podcast',
+                'og_slug' => '/podcast',
                 'og_type' => 'website',
                 'og_locale' => 'nl_NL',
             ],
             [
                 'page_title' => 'Portfolio',
                 'menu_title' => 'Portfolio',
-                'slug' => '#portfolio',
+                'slug' => '/portfolio',
                 'content' => '<p>Dit is een stuk tekst.</p>',
 
                 'meta_title' => 'Portfolio',
@@ -115,14 +99,14 @@ class MainSeeder extends Seeder
 
                 'og_title' => 'Portfolio',
                 'og_description' => 'Dit is een stuk tekst.',
-                'og_slug' => '#portfolio',
+                'og_slug' => '/portfolio',
                 'og_type' => 'website',
                 'og_locale' => 'nl_NL',
             ],
             [
                 'page_title' => 'Contact',
                 'menu_title' => 'Contact',
-                'slug' => '#contact',
+                'slug' => '/contact',
                 'content' => '<p>Dit is een stuk tekst.</p>',
 
                 'meta_title' => 'Contact',
@@ -131,7 +115,7 @@ class MainSeeder extends Seeder
 
                 'og_title' => 'Contact',
                 'og_description' => 'Dit is een stuk tekst.',
-                'og_slug' => '#contact',
+                'og_slug' => '/contact',
                 'og_type' => 'website',
                 'og_locale' => 'nl_NL',
             ],

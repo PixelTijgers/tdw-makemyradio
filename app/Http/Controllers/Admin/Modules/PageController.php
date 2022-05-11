@@ -168,20 +168,6 @@ class PageController extends Controller
      */
     protected function processPageSlider($request, $model)
     {
-        /*
-        // Validate the pageslider input.
-        $request->validate([
-            'pageSlider.*._lft' => 'required|numeric|max:10',
-            'pageSlider.*.figcaption' => 'nullable|string|max:160',
-            'pageSlider.*.title' => 'nullable|string|max:255',
-            'pageSlider.*.slug' => 'nullable|slug|max:255',
-            'pageSlider.*.alt' => 'nullable|string|max:255',
-        ]);
-        */
-
-        // Delete previous slides to empty the table.
-        // PageSlide::where('page_id', $model->id)->delete();
-
         // Add new slides.
         foreach(collect($request->pageSlider)->slice(1)->toArray() as $key => $slide)
         {
@@ -190,11 +176,9 @@ class PageController extends Controller
             ],
             [
                 'page_id' => $model->id,
-                'subtitle' => $slide['subtitle'],
                 'title' => $slide['title'],
                 'figcaption' => $slide['figcaption'],
                 'alt' => $slide['alt'],
-                'slug' => $slide['slug'],
                 '_lft' => $slide['_lft'],
             ]);
 
@@ -231,8 +215,6 @@ class PageController extends Controller
      */
     public function store(PageRequest $request)
     {
-
-
         // Post data to database.
         $page = Page::create([
             'slug'  => $request->slug,

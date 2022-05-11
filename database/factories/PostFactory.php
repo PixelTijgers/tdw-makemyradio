@@ -31,8 +31,8 @@ class PostFactory extends Factory
             'administrator_id'  => \Arr::random([1,2]),
             'category_id'       => \Arr::random([1,2]),
             'slug'              => \Str::slug($title),
-            'title'             => $this->faker->sentence(8),
-            'intro'             => $this->faker->paragraph(20),
+            'title'             => $this->faker->sentence(2),
+            'intro'             => $this->faker->paragraph(4),
             'content'           => $this->faker->paragraph(20),
 
             'meta_title'        => $this->faker->sentence(8),

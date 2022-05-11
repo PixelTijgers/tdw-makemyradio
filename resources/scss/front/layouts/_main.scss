@@ -41,76 +41,34 @@ main {
     }
 
     p {
-        color: var(--clr-black-500);
-        font-size: 18px;
-        font-weight: 400;
+        color: #333;
+        font-size: 14px;
+        font-weight: 300;
         line-height: 30px;
         margin-bottom: 40px;
         word-spacing: 2px;
-    }
 
-    aside {
-        section {
-            width: 100%;
+        @include screen-size(md) {
+            font-size: 16px;
+        }
 
-            &.widget {
-                background: #FBFBFD;
-                margin-top: 30px;
-                padding: 30px;
-
-                &:first-child {
-                    margin-top: 0 !important;
-                }
-
-                .widget-title {
-                    border-bottom: 1px solid var(--clr-white-200);
-                    padding-bottom: 7px;
-                    margin-bottom: 20px;
-                    text-align: center;
-
-                    h3 {
-                        font-size: 16px;
-                        line-height: 1.24;
-                        margin-bottom: 0;
-                    }
-                }
-
-                .widget-content {
-                    ul.social-media {
-                        display: flex;
-                        justify-content: center;
-
-                        li {
-                            margin: 5px;
-
-                            a {
-
-                                svg {
-                                    font-size: 16px;
-                                }
-                            }
-                        }
-                    }
-
-                    ul {
-                        li {
-                            color: var(--clr-black-500);
-                            font-size: 16px;
-                            font-weight: 400;
-                            line-height: 25px;
-                            word-spacing: 2px;
-                        }
-                    }
-                }
-            }
+        @include screen-size(lg) {
+            font-size: 18px;
         }
     }
 
     .main-container,
-    .sub-container {
+    .sub-container,
+    .primary-container,
+    .secondary-container {
         background: var(--clr-white-100);
         padding-top: 50px;
         padding-bottom: 35px;
+
+        img {
+            box-shadow: 3px 3px 6px 0 rgba(147, 127, 201, 0.2);
+            border-radius: 15px;
+        }
 
         @include screen-size(sm) {
             padding-top: 65px;
@@ -118,12 +76,103 @@ main {
         }
 
         @include screen-size(lg) {
-            padding-top: 80px;
+            padding-top: 100px;
             padding-bottom: 65px;
+        }
+    }
+
+    .main-container {
+        h3 {
+
+            &:after {
+                background: var(--clr-primary-300);
+                content: '';
+                border-radius: 3px;
+                display: block;
+                height: 4px;
+                margin: 8px 0 15px;
+                width: 75px;
+            }
+        }
+
+        .btn {
+            display: inline-flex;
+            justify-content: center;
+            width: 120px;
+        }
+
+        .contact {
+            .form-group {
+                display: flex;
+                flex-direction: column;
+
+                label {
+                    font-size: 14px;
+                    font-weight: 900;
+                    margin-bottom: 5px;
+                }
+
+                input,
+                textarea {
+                    @include hoverTransition(var(--tr-time), var(--ts-ease));
+
+                    border: 1px solid #CCC;
+                    border-radius: 5px;
+                    font-size: 14px;
+                    margin-bottom: 25px;
+                    padding: 10px 15px;
+
+                    &:focus {
+                        border-color: var(--clr-primary-300);
+                    }
+                }
+
+                textarea {
+                    height: 200px;
+                    resize: none;
+                }
+            }
+        }
+    }
+    .home-container {
+        padding-bottom: 125px;
+
+        @include screen-size(sm) {
+            padding-bottom: 175px;
+        }
+
+        @include screen-size(md) {
+            padding-bottom: 200px;
+        }
+
+        @include screen-size(lg) {
+            padding-bottom: 250px;
         }
     }
 
     .sub-container {
         background: var(--clr-white-200);
+    }
+
+    .stream-container {
+        padding-bottom: 350px;
+    }
+
+    .primary-container {
+        background: var(--clr-primary-300);
+        padding-top: 0;
+
+        @include screen-size(md) {
+            padding-bottom: 100px;
+        }
+    }
+
+    .secondary-container {
+        background: var(--clr-secondary-300);
+        padding-bottom: 100px;
+
+        > div {
+            margin-top: -350px;
+        }
     }
 }

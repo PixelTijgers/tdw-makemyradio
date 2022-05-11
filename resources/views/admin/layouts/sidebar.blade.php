@@ -71,6 +71,15 @@
                     </li>
                     @endcan
 
+                    @can('modules.sponsor.index')
+
+                    <li class="nav-item {{ active(['*/partners', '*/partners/*']) }}">
+                        <a href="{{ url('/admin/modules/partners') }}" class="nav-link">
+                            <i class="link-icon fa-regular fa-handshake-simple"></i><span class="link-title">{{ __('Sponsors') }}</span>
+                        </a>
+                    </li>
+                    @endcan
+
                     @can('modules.social.index')
 
                     <li class="nav-item {{ active(['*/socials', '*/socials/*']) }}">

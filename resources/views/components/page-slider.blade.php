@@ -1,45 +1,28 @@
 @if(\App\Models\PageSlide::where('page_id', $page->id)->get() != null)
-
 <div class="{{ $cssNs }}">
 
-    <div class="mx-auto max-w-screen-xl w-full px-5 md:px-16 relative">
+    <div id="pageSlider">
 
-        <div id="pageSlider">
-            @foreach(\App\Models\PageSlide::where('page_id', $page->id)->orderBy('_lft', 'asc')->get() as $slide)
+        @foreach(\App\Models\PageSlide::where('page_id', $page->id)->orderBy('_lft', 'asc')->get() as $slide)
+        <div class="slide">
 
-            <div class="slide">
+            <figure>
 
-                <a href="{{ $slide->slug }}">
+                <img src="{{ $slide->getFirstMediaUrl('pageSliderImage') }}" alt="{{ $slide->alt }}"/>
 
-                    <figure>
+            </figure>
 
-                        <img src="{{ $slide->getFirstMediaUrl('pageSliderImage') }}" alt="{{ $slide->alt }}"/>
+            <div class="meta">
 
-                    </figure>
-
-                    <div class="meta">
-
-                        <h4>{{ $slide->subtitle }}</h4>
-                        <h3>{{ $slide->title }}</h3>
-                        <p>{{ $slide->figcaption }} </p>
-                        <a href="{{ $slide->slug }}" class="btn">Lees meer <i class="fa-solid fa-angles-right"></i></a>
-
-                    </div>
-
-                </a>
+                <h3>{{ $slide->title }}</h3>
+                <p>{{ $slide->figcaption }} </p>
 
             </div>
-            @endforeach
-
-
 
         </div>
-
-        <div class="appendButtons"></div>
+        @endforeach
 
     </div>
 
 </div>
-
-
 @endif

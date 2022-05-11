@@ -7,21 +7,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 
 // Traits.
-use Spatie\MediaLibrary\MediaCollections\File;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
-use Spatie\MediaLibrary\HasMedia;
-use Spatie\MediaLibrary\InteractsWithMedia;
+use Spatie\Permission\Traits\HasRoles;
 
-// Scopes.
-use App\Scopes\PublishedScope;
-
-class PageSlide extends Model implements HasMedia
+class Sponsor extends Model
 {
     /**
      * Traits
      *
      */
-    use InteractsWithMedia;
+    use HasRoles;
 
     /**
      * The attributes that are mass assignable.
@@ -29,11 +23,7 @@ class PageSlide extends Model implements HasMedia
      * @var string[]
      */
     protected $fillable = [
-        'page_id',
-        'title',
-        'figcaption',
-        'alt',
-        '_lft',
+        'name',
     ];
 
     /**
@@ -42,7 +32,7 @@ class PageSlide extends Model implements HasMedia
      */
     public function registerMediaCollections(): void
     {
-        $this->addMediaCollection('pageSliderImage')->singleFile();
+        $this->addMediaCollection('sponsorImage')->singleFile();
     }
 
     /**
@@ -51,8 +41,8 @@ class PageSlide extends Model implements HasMedia
      */
     public function registerMediaConversions(Media $media = null): void
     {
-        $this->addMediaConversion('pageSliderImage')
+        $this->addMediaConversion('sponsorImage')
             ->withResponsiveImages()
-            ->performOnCollections('pageSliderImage');
+            ->performOnCollections('sponsorImage');
     }
 }

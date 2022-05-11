@@ -1,0 +1,54 @@
+:root {
+
+}
+
+.front-modules-home-Index {
+    .portfolio {
+        position: relative;
+            top: -50px;
+
+        .portfolio-item {
+
+            &:last-of-type {
+                margin-bottom: 0 !important;
+            }
+
+            img {
+                box-shadow: none;
+                border-radius: 15px 15px 0 0;
+            }
+
+            .meta {
+                background: var(--clr-white-100);
+                border-radius: 0 0 15px 15px;
+                padding: 30px;
+
+                h3 {
+                    font-size: 24px;
+
+                    &:after {
+                        background: var(--clr-primary-300);
+                        content: '';
+                        border-radius: 3px;
+                        display: block;
+                        height: 3px;
+                        margin: 5px 0 15px;
+                        width: 75px;
+                    }
+                }
+
+                p {
+                    font-size: 16px;
+                    height: 225px;
+                    max-height: 300px;
+                }
+
+                .btn {
+                    display: inline-flex;
+                    justify-content: center;
+                    width: 120px;
+                }
+            }
+        }
+    }
+}

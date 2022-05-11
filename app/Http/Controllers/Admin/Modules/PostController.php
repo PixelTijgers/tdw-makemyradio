@@ -42,7 +42,6 @@ class PostController extends Controller
      */
     protected function processImage($request, $model, $imageName)
     {
-        dd($request, !$request->filled($imageName . 'CurrentImage'));
         // Only change page image when there's a file uploaded.
         if($request->exists($imageName . 'CurrentImage') && !$request->filled($imageName . 'CurrentImage'))
             // Delete image.

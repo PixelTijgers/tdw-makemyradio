@@ -13,18 +13,16 @@ common.View.create('front.modules.home.Index', {
     initSlickslider()
     {
         $('#pageSlider').slick({
-            arrows: true,
+            arrows: false,
             cssEase: 'linear',
-            dots: false,
+            dots: true,
             fade: true,
             infinite: true,
             slidesToShow: 1,
             slidesToScroll: 1,
             speed: 500,
-            appendArrows: '.appendButtons',
-            prevArrow: '<button type="button" class="slick-prev"><i class="fa-thin fa-arrow-left-long"></i></button>',
-            nextArrow: '<button type="button" class="slick-next"><i class="fa-thin fa-arrow-right-long"></i></button>'
         });
-    }
 
+        $('#pageSlider').css('height', $(window).height() + 'px');
+    }
 })

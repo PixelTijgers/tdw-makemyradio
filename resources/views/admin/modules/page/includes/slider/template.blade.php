@@ -20,13 +20,6 @@
 
             <x-form.input
                 type="text"
-                name="pageSlider[0][subtitle]"
-                :label="__('Subtitle')"
-                :required="false"
-            />
-
-            <x-form.input
-                type="text"
                 name="pageSlider[0][title]"
                 :label="__('Title')"
                 :required="false"
@@ -36,15 +29,6 @@
                 name="pageSlider[0][figcaption]"
                 maxLength="165"
                 :label="__('Figcaption')"
-                :required="false"
-            />
-
-            <x-form.slug
-                name="pageSlider[0][slug]"
-                slugField="page_title"
-                :label="__('Url')"
-                :model="@$page"
-                :modelName="\App\Models\Post::where('id', @$page->parent_id)->first()"
                 :required="false"
             />
 
